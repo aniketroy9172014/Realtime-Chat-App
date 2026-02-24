@@ -73,8 +73,3 @@
 **Environment / Run Notes**
 - The backend expects `MONGODB_URI`, `JWT_SECRET`, and Cloudinary env vars (`CLOUDINARY_CLOUD_NAME`, `CLOUDINARY_API_KEY`, `CLOUDINARY_API_SECRET`). See [backend/src/lib/cloudinary.js](backend/src/lib/cloudinary.js) and [backend/src/lib/db.js](backend/src/lib/db.js).
 - `axiosInstance` in [frontend/src/lib/axios.js](frontend/src/lib/axios.js) uses `withCredentials: true` so the `jwt` cookie is included automatically.
-
-If you want, I can also:
-- Add a sequence diagram or Mermaid chart.
-- Generate a compact architecture diagram.
-- Create a CONTRIBUTING or DEV_RUN.md with exact start commands.
