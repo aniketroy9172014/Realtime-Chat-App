@@ -68,11 +68,12 @@ export const useAuthStore = create((set, get) => ({
     }
   },
 
-  updateProfile: async (profilePic) => {
+  updateProfile: async (data) => {
     set({ isUpdatingProfile: true });
     try {
-      const res = await axiosInstance.put("/auth/update-profile", { profilePic });
-      //set({ authUser: res.data });
+      const res = await axiosInstance.put("/auth/update-profile", data);
+      
+      set({ authUser: res.data });
       toast.success("Profile updated successfully");
       return res.data; // make sure res is not undefined
     } catch (error) {
