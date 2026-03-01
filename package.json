@@ -1,0 +1,21 @@
+{
+  "name": "realtime-chat-app",
+  "version": "1.0.0",
+  "description": "**Overview**\r - **Purpose:** Real-time 1:1 chat app with image attachments, auth, and online presence.\r - **Stack:** Node/Express + Socket.IO + MongoDB (backend) and React + Vite + Zustand (frontend).",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "npm run start --prefix backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aniketroy9172014/Realtime-Chat-App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aniketroy9172014/Realtime-Chat-App/issues"
+  },
+  "homepage": "https://github.com/aniketroy9172014/Realtime-Chat-App#readme"
+}
